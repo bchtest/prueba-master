@@ -1,19 +1,257 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es" ng-app>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
+		<title>Banco de Chile - Test</title>
 		<meta name="description" content="">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 
 	</head>
 	<body>
+		<div>
+			<nav class="navbar navbar-default navbar-bch">
+  				<div class="container">
+    				<div class="navbar-header">
+      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        				<span class="sr-only">Toggle navigation</span>
+	        				<span class="icon-bar"></span>
+	        				<span class="icon-bar"></span>
+	        				<span class="icon-bar"></span>
+      					</button>
+      					<a class="navbar-brand" href="#"></a>
+    				</div>
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="#">Enlace 1</a></li>
+				        <li><a href="#">Enlace 2</a></li>
+				      </ul>
+				    </div>
+  				</div>
+  			</nav>
 
-		<p></p>
-
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Título</h1>
+						<div class="panel panel-default panel-bch">
+						  	<div class="panel-heading">
+						  		<h2>Título Caja</h2>
+						  	</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4">
+										<h3>Lorem ipsum</h3>
+										<ul class="ul-sm-padding">
+											<li>Lorem ipsum dolor sit amet, consectetur.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur.</li>
+										</ul>
+									</div>
+									<div class="col-md-8">
+										<div class="box-white">
+											<div class="row">
+												<div class="col-md-8">
+													<ul>
+														<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores at maiores quo voluptatum, aspernatur sequi soluta</li>
+														<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores at maiores quo voluptatum, aspernatur sequi soluta</li>
+													</ul>
+												</div>
+												<div class="col-md-4">
+													<ul>
+														<li>$200.000.000.000.000</li>
+														<li>$200.000.000.000.000</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+						
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<div class="row">
+											<div class="col-md-6 col-sm-6">
+												<p>Total de items: x</p>
+											</div>
+											<div class="col-md-6 col-sm-6">
+												<a role="button" class="pull-right btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Abrir</a>
+											</div>
+										</div>
+								  </h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								  <div class="panel-body">
+								    <div class="form-bch">
+								    	<form class="form">
+								    		<div class="row">
+							    				<div class="col-md-3">
+							    					<div class="form-group">
+							    						<div class="input-group">
+															<input type="date" class="form-control" id="" placeholder="Seleccione...">
+															<div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+														</div>
+													</div>
+							    				</div>
+							    				<div class="col-md-3">
+							    					<div class="form-group">
+							    						<div class="input-group">
+															<input type="date" class="form-control" id="" placeholder="Seleccione...">
+															<div class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></div>
+														</div>
+													</div>
+							    				</div>
+							    				<div class="col-md-3">
+							    					<div class="form-group">
+														<select class="form-control">
+															<option>Seleccione</option>
+															<option>xxxxxx</option>
+															<option>xxxxxx</option>
+															<option>xxxxxx</option>
+															<option>xxxxxx</option>
+														</select>
+													</div>
+							    				</div>
+								    		</div>
+								    		<div class="row">
+								    			<div class="col-md-6">
+								    				<div class="form-group">
+														<input type="text" class="form-control" id="" placeholder="Busqueda General...">
+													</div>
+								    			</div>
+								    			<div class="col-md-6">
+								    				<button class="btn btn-success pull-right btn-buscar-bch">Buscar</button>
+								    			</div>
+								    		</div>
+										</form>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="tabla-bch">
+							<table class="table">
+							<tr>
+								<th></th>
+								<th>Lorem</th>
+								<th>Ipsum</th>
+								<th>Dolor</th>
+								<th>Sit</th>
+								<th>Amet</th>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 200.000</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 100.000</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 50.000</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 200.000</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 100.000</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="checkbox">
+										<label><input type="checkbox"></label>
+  									</div>
+  								</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>xxxxxxxx</td>
+								<td>$ 50.000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="paginador-bch text-center">
+						<nav aria-label="Page navigation">
+  							<ul class="pagination">
+    							<li class="disabled">
+      								<a href="#" aria-label="Previous">
+        								<span aria-hidden="true">&laquo;</span>
+      								</a>
+    							</li>
+							    <li class="active"><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">4</a></li>
+							    <li><a href="#">5</a></li>
+							    <li><a href="#">6</a></li>
+							    <li><a href="#">7</a></li>
+							    <li><a href="#">8</a></li>
+							    <li><a href="#">9</a></li>
+							    <li>
+      								<a href="#" aria-label="Next">
+        								<span aria-hidden="true">&raquo;</span>
+      								</a>
+    							</li>
+  							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
