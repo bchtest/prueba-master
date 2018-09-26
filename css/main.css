@@ -54,26 +54,134 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: 14px;
+    color:#666;
+}
+
+h1,h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    color:#002157;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h2,h3 {
+    color: #666;
+    margin-top: 10px;
+}
+
+.ul-sm-padding {
+    padding-left: 16px;
+}
+
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
 
 
+/* Navbar */
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-bch {
+    background: #002157;
+    border-radius: 0;
+    border-color: transparent;
+    min-height: 100px;
+} 
+
+.navbar-bch a {
+    color: #fff !important;
+}
+
+.navbar-bch a:hover {
+    color:#ccc !important;
+}
+
+.navbar-bch .navbar-nav {
+    font-size: 14px;
+}
 
 
+.navbar-default .navbar-nav>li>a {
+    padding: 6px;
+}
 
+a.navbar-brand {
+    width: 215px;
+    height:37px;
+    background: url(../img/logo-sprite.png) no-repeat 15px 0;
+    margin: 30px;
 
+}
 
+/* Paneles */
 
+.panel-bch .panel-body {
+    background: #f6f6f8;
+}
 
+.box-white {
+    background: #fff;
+    padding: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+/* Forms */
 
+.btn-buscar-bch {
+    margin-right: 30px;
+}
 
+/* Tablas */
 
+.tabla-bch {
+    font-family: arial, sans-serif;
+    color:#333;
+}
+
+th {
+    background: #f6f6f6;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-bch .table>tbody>tr>td {
+    vertical-align: middle
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
+    
 }
 
 @media print,
