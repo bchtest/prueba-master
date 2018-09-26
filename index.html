@@ -12,11 +12,12 @@
 		<link rel="stylesheet" href="css/main.css">
 
 	</head>
-	<body ng-app="busquedaTabla">
-			<nav class="navbar navbar-default navbar-bch">
+	<body ng-app="app">
+		<div ng-controller="CollapseDemoCtrl">
+			<nav class="navbar navbar-default navbar-bch" role="navegation">
   				<div class="container">
     				<div class="navbar-header">
-      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      					<button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
 	        				<span class="sr-only">Toggle navigation</span>
 	        				<span class="icon-bar"></span>
 	        				<span class="icon-bar"></span>
@@ -24,7 +25,7 @@
       					</button>
       					<a class="navbar-brand" href="#"></a>
     				</div>
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
 				      <ul class="nav navbar-nav navbar-right">
 				        <li><a href="#">Enlace 1</a></li>
 				        <li><a href="#">Enlace 2</a></li>
@@ -74,21 +75,22 @@
 						  	</div>
 						</div>
 						
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel-group">
 							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
+								<div class="panel-heading">
 									<h4 class="panel-title">
 										<div class="row">
-											<div class="col-md-6 col-sm-6">
+											<div class="col-md-6 col-sm-6 col-xs-6">
 												<p>Total de items: x</p>
 											</div>
-											<div class="col-md-6 col-sm-6">
-												<a role="button" class="pull-right btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Abrir</a>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<a role="button" class="pull-right btn btn-default" ng-click="isCollapsed = !isCollapsed" ng-show="isCollapsed == true">Abrir</a>
+												<a role="button" class="pull-right btn btn-default" ng-click="isCollapsed = !isCollapsed" ng-show="isCollapsed == false">Cerrar</a>
 											</div>
 										</div>
 								  </h4>
 								</div>
-								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div uib-collapse="isCollapsed">
 								  <div class="panel-body">
 								    <div class="form-bch">
 								    	<form class="form">
@@ -137,8 +139,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="tabla-bch">
-							<table class="table" ng-controller="busquedaController">
+					</div>
+
+					<div class="tabla-bch col-md-12">
+						<table class="table" ng-controller="busquedaController">
 							<tr>
 								<th></th>
 								<th>Lorem</th>
@@ -151,16 +155,17 @@
 								<td>
 									<div class="checkbox">
 										<label><input type="checkbox"></label>
-  									</div>
-  								</td>
+										</div>
+									</td>
 								<td>{{item.lorem}}</td>
-                				<td>{{item.ipsum}}</td>
-                				<td>{{item.dolor}}</td>
-                				<td>{{item.sit}}</td>
-                				<td>{{item.amet}}</td>
+	            				<td>{{item.ipsum}}</td>
+	            				<td>{{item.dolor}}</td>
+	            				<td>{{item.sit}}</td>
+	            				<td>{{item.amet}}</td>
 							</tr>
 						</table>
 					</div>
+
 					<div class="paginador-bch text-center">
 						<nav aria-label="Page navigation">
   							<ul class="pagination">

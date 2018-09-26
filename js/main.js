@@ -1,7 +1,7 @@
 
-angular.module('busquedaTabla', ['ui.bootstrap'])
+var app = angular.module('app', ['ui.bootstrap', 'ngAnimate'])
 
-.controller('busquedaController', ['$scope', function($scope){
+app.controller('busquedaController', ['$scope', function($scope){
     $scope.lista = [
         {lorem: 'aaaaaa', ipsum: 'aaaaaa', dolor:'aaaaaa', sit:'aaaaaa', amet:'$ 200.000'},
         {lorem: 'bbbbbb', ipsum: 'bbbbbb', dolor:'bbbbbb', sit:'bbbbbb', amet:'$ 100.000'},
@@ -14,3 +14,8 @@ angular.module('busquedaTabla', ['ui.bootstrap'])
         {lorem: 'iiiiii', ipsum: 'iiiiii', dolor:'iiiiii', sit:'iiiiii', amet:'$ 50.000'}
     ];
 }]);
+
+app.controller('CollapseDemoCtrl', function ($scope) {
+  $scope.isNavCollapsed = true;
+  $scope.isCollapsed = true;
+});
