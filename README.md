@@ -17,4 +17,5 @@ Para ello haga fork de este proyecto junto a un commit inicial para poder regist
 
 ## Información adicional
 ![Paleta de colores](pieza-grafica/asset-2.png)
+----
 ![Fuentes](pieza-grafica/asset-1.png)
