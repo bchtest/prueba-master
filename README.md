@@ -1,21 +1,21 @@
-Prueba Ingreso Front-End Designer
+# Prueba Ingreso Front-End Designer
 
-Construya la pieza gráfica que se encuentra en el repositorio. Para ello haga fork y luego haga un commit inicial para poder tomar el tiempo que le lleva realizar la tarea. No olvidar la versión tablet.
+## Objetivo
+Construir la pieza gráfica que se encuentra en el repositorio. 
 
-Debe utilizar:
+## Instrucciones
+Para ello haga fork de este proyecto junto a un commit inicial para poder registrar el tiempo que le lleva realizar la tarea.
 
-- Bootstrap
-- Angular 1.3.x (puede ser otra versión)
+## Requisitos
+* Bootstrap ^3
+* Angular ^1.3.x
 
-Deseable:
+## Deseable
+* Bootstrap UI
+* BEM
+* Preprocesador CSS
 
-- Bootstrap UI
-- BEM
-
-Las fuentes utilizadas en la pieza gráfica son Roboto y Arial para las tablas.
-
-h1 -> 28px Roboto Condensed
-h2 -> 20px Roboto
-h3 -> 18px Roboto
-
-body -> 14px
+## Información adicional
+![Paleta de colores](pieza-grafica/asset-2.png)
+----
+![Fuentes](pieza-grafica/asset-1.png)
